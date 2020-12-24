@@ -1,23 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import InsertTodo from "./components/InsertTodo";
+import Todo from "./components/Todo";
+import ListTodo from "./components/ListTodo";
+import { useSelector } from "react-redux";
 
 function App() {
+  const todos = useSelector((state) => state);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div style={{ display: "flex" }}>
+        <InsertTodo />
+        <ListTodo />
+      </div>
+      {todos.map((td) => (
+        <Todo key={td.id} content={td.content} id={td.id} />
+      ))}
     </div>
   );
 }
