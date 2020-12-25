@@ -9,8 +9,9 @@
 
 /********************************* header **************************/
 .header {
-  background: url("background.jpg") no-repeat;
-  background: #61fc94;
+  background: url("https://media.self.com/photos/582e3ae85950e5b245aca763/4:3/w_2560%2Cc_limit/subway-therapy.jpg")
+    no-repeat;
+  /* background: #61fc94; */
   position: sticky;
   top: 0;
   width: 100%;
