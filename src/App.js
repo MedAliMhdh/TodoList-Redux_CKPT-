@@ -9,9 +9,11 @@ function App() {
 
   return (
     <div className="App">
-      <div style={{ display: "flex" }}>
-        <InsertTodo />
-        <ListTodo />
+      <div className="header">
+        <div className="subHeader">
+          <InsertTodo />
+          <ListTodo />
+        </div>
       </div>
       {todos.map((td) => (
         <Todo key={td.id} content={td.content} id={td.id} />

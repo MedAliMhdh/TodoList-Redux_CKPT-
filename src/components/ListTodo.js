@@ -1,13 +1,13 @@
-import React, { useState } from "react";
+import React from "react";
+import "../App.css";
 import { useSelector, useDispatch } from "react-redux";
 import { filterTodos } from "../actions/todoActoins";
 
 const ListTodo = () => {
-  const AllTodos = useSelector((state) => state);
   const dispatch = useDispatch();
 
   return (
-    <div>
+    <div className="listTodo">
       <select
         name="all Todos"
         onChange={(e) => dispatch(filterTodos(e.target.value))}

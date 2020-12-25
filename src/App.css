@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@700&display=swap");
+
+* {
+  font-family: "Raleway", sans-serif;
+  margin: 0px;
+  padding: 0px;
+  font-size: 30px;
+}
+
+/********************************* header **************************/
+.header {
+  background: url("background.jpg") no-repeat;
+  /* background: #61fc94; */
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+  background-size: cover;
+}
+
+.logo {
+  width: 50px;
+  color: #d9fc61;
+  position: absolute;
+  top: 0px;
+  left: 20px;
+  margin-top: 30px;
+  margin-left: 30px;
+}
+.subHeader {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 300px;
+}
+
+.inputTodo {
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.listTodo {
+  margin: 0 auto;
+}
+
+.inputTodo input {
+  width: 300px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.inputTodo button {
+  width: 100px;
+  height: 53px;
+}
+
+.listTodo select {
+  width: 304px;
+  height: 50px;
+  position: relative;
+  right: 55px;
+}
+
+/************************ body **********************/
+.body {
+  margin-top: 50px;
+}
+
+.todoItem {
+  display: flex;
+  justify-content: center;
+}
+
+.todoContent {
+  position: relative;
+  top: 20px;
+  width: 300px;
+}
+
+.todoButtons button {
+  margin: 10px;
+  width: 100px;
+  height: 53px;
+}
+
+.editTodo {
+  display: flex;
+  justify-content: center;
+}
+
+.editTodo input {
+  width: 290px;
+  height: 49px;
+  position: relative;
+  top: 11px;
+  border: none;
+}
+
+.editTodo button {
+  margin: 10px;
+  width: 160px;
+  height: 53px;
+}
+
+.Edit {
+  background: #81f063;
+  border: none;
+}
+
+.Done {
+  background: #e6f063;
+  border: none;
+}
+
+.Delete {
+  background: #f08163;
+  border: none;
+}
+
+.confirm {
+  background: #81f063;
+  border: none;
+}
+
+.cancel {
+  background: #f08163;
+  border: none;
+}

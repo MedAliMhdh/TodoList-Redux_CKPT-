@@ -1,5 +1,30 @@
 // let initialState = [{ id: 1, content: "homework", isCompleted: false }];
-let aux = [];
+let aux = [
+  {
+    id: Math.random(),
+    content: "Do the Chekpoint",
+    isCompleted: false,
+    editing: false,
+  },
+  {
+    id: Math.random(),
+    content: "complete API course",
+    isCompleted: false,
+    editing: false,
+  },
+  {
+    id: Math.random(),
+    content: "Fix bugs in project x",
+    isCompleted: false,
+    editing: false,
+  },
+  {
+    id: Math.random(),
+    content: "Buy grocery",
+    isCompleted: false,
+    editing: false,
+  },
+];
 const todoReducer = (state = aux, action) => {
   switch (action.type) {
     case "ADD_TODO":
